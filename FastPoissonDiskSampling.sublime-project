@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/daikiyamanaka/Dropbox/research/program/FastPoissonDiskSampling"
+		}
+	],
+	"settings": {
+		"sublimeclang_options": [
+		"-I/Users/daikiyamanaka/Program/eigen-3.1.3"
+		]
+	}
+}
