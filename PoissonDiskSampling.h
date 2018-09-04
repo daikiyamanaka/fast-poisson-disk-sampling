@@ -14,8 +14,8 @@ class PoissonDiskSampling
 public:
 	class Node{
 		public:
-		Node(){};
-		Node(int x, int y, double df):x_id(x), y_id(y), val(df){visited = false;};
+		Node(){ val = 5.0; visited = false;};
+		Node(int x, int y, double df):x_id(x), y_id(y), val(df){ val = 5.0; visited = false;};
 		~Node(){};
 		Node(const Node& rn){
 			x_id = rn.x_id;
@@ -31,7 +31,7 @@ public:
 	class Converter{
 		public:
 			Converter(){};
-			~Converter(){};		
+			~Converter(){};
 			double operator()(double val){
 				return val;
 			};
@@ -46,7 +46,7 @@ public:
 
 private:
 	std::vector<int> calcNeighborIndex(Node &node, double r);
-	Eigen::Vector3d genRandomPoint();		
+	Eigen::Vector3d genRandomPoint();
 
 	boost::function<double(double)> f;
 	std::vector<Node> nodes;
