@@ -69,8 +69,7 @@ endif()
 ##########
 #Eigen
 ##########
-include_directories("/Users/daikiyamanaka/Program/eigen-3.1.3")
-
+include_directories(/usr/local/include/eigen3)
 
 ###########
 #Cairo
